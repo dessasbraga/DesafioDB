@@ -115,10 +115,10 @@ public class Elementos {
 		boolean validaCompra = driver.getPageSource().contains("");
 		assertTrue(validaCompra);
 	}
-		/*@After
+		@After
 		public void tearDown() {
 		driver.quit();
-		}*/
+		}
 	}
 
 
