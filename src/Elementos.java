@@ -24,7 +24,7 @@ public class Elementos {
 		
 	}
 	@Test
-	public void validaEscolha() throws InterruptedException {
+	public void efetuandoCompra()  {
 		//Escolhendo o produto pelo nome
 		driver.findElement(By.linkText("Blouse")).click();
 		
@@ -41,15 +41,15 @@ public class Elementos {
 		driver.findElement(By.partialLinkText("Proceed to checkout")).click();
 		
 		//Criar cadastro
-		driver.findElement(By.id("email_create")).sendKeys("teste07@dbserver.com");
+		driver.findElement(By.id("email_create")).sendKeys("teste08@dbserver.com");
 	
 		//Clicar em Create an account
 		driver.findElement(By.id("SubmitCreate")).click();
 
 		//Preencher dados de cadastro
 		driver.findElement(By.id("id_gender2")).click();	
-		driver.findElement(By.id("customer_firstname")).sendKeys("dbtestedb");
-		driver.findElement(By.id("customer_lastname")).sendKeys("dbserverteste");
+		driver.findElement(By.id("customer_firstname")).sendKeys("dbtestedbtst");
+		driver.findElement(By.id("customer_lastname")).sendKeys("dbservertestet");
 		driver.findElement(By.id("passwd")).sendKeys("123456");
 		
 		//Selecionando data de aniversário
@@ -64,8 +64,8 @@ public class Elementos {
 	    comboBoxYears1.selectByValue("1980");
 	    
 	    
-	    driver.findElement(By.id("firstname")).sendKeys("dbtestedb");
-	    driver.findElement(By.id("lastname")).sendKeys("dbserverteste");
+	    driver.findElement(By.id("firstname")).sendKeys("dbtestedbtst");
+	    driver.findElement(By.id("lastname")).sendKeys("dbservertestet");
 	    driver.findElement(By.id("company")).sendKeys("DBSERVER");
 	    driver.findElement(By.id("address1")).sendKeys("Avenida Bento Goncalves");
 		
